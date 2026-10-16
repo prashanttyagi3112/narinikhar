@@ -508,6 +508,12 @@ footer .logo{color:#fff}
 .copyline{border-color:rgba(255,46,139,.35)}
 .lb-side .price{color:var(--rose)}
 @media (max-width:560px){.logo-name{font-size:1.1rem}.collage::before{inset:-18px -12px}}
+
+/* wordmark as on the shop sign: नARI निKHAR */
+.wm{font-family:"Cinzel","Tiro Devanagari Hindi","Noto Serif Devanagari",Georgia,serif!important;font-weight:700!important;letter-spacing:.06em;text-transform:none!important;white-space:nowrap}
+.logo-name{font-family:"Cinzel","Tiro Devanagari Hindi",Georgia,serif!important;font-weight:700!important;text-transform:none!important;font-size:1.5rem;letter-spacing:.04em}
+.foot-logo .logo-name{font-size:1.9rem}
+@media (max-width:560px){.logo-name{font-size:1.2rem}}
 '''
 
 lo_all = min(v[3] for v in P.values())
@@ -518,7 +524,7 @@ BODY = f'''
 <div class="strip"><div class="strip-in">{STRIP}<span class="dup" aria-hidden="true"></span></div></div>
 <header class="top">
  <div class="wrap bar" style="position:relative">
-  <a class="logo" href="#top" aria-label="Nari Nikhar home"><img class="logo-img" src="images/logo-192.png" alt="Nari Nikhar logo" width="56" height="56"><span><span class="logo-name">Nari Nikhar</span><span class="logo-sub">Quality makes the difference</span></span></a>
+  <a class="logo" href="#top" aria-label="Nari Nikhar home"><img class="logo-img" src="images/logo-192.png" alt="Nari Nikhar logo" width="56" height="56"><span><span class="logo-name"><span class="wm" aria-label="Nari Nikhar"><span aria-hidden="true">नARI निKHAR</span></span></span><span class="logo-sub">Quality makes the difference</span></span></a>
   <nav class="main" id="mainNav" aria-label="Main"><ul>{''.join(f'<li><a href="{h}">{t}</a></li>' for h,t in HEAD_NAV)}</ul></nav>
   <div style="display:flex;gap:10px;align-items:center">
    {btn_wa("Hi Nari Nikhar! I would like to order an outfit.", "Order on WhatsApp")}
@@ -596,7 +602,7 @@ BODY = f'''
     </div></div>
    </div>
    <div class="chat">
-    <div class="chat-top"><img class="av" src="images/logo-192.png" alt="" width="36" height="36"><span>Nari Nikhar<small>+91 98702 78767</small></span></div>
+    <div class="chat-top"><img class="av" src="images/logo-192.png" alt="" width="36" height="36"><span><span class="wm" aria-label="Nari Nikhar"><span aria-hidden="true">नARI निKHAR</span></span><small>+91 98702 78767</small></span></div>
     <div class="bubble" id="bubble" aria-live="polite">Hi Nari Nikhar! I'm looking for a wedding outfit in size M, budget ₹2,000 – ₹3,000. Please show me what you have.</div>
     <a class="btn-wa" id="finderBtn" href="#" target="_blank" rel="noopener">{WAI}<span>Send on WhatsApp</span></a>
    </div>
@@ -684,7 +690,7 @@ BODY = f'''
 <footer>
  <div class="toran" aria-hidden="true"></div>
  <div class="wrap foot">
-  <div><a class="logo foot-logo" href="#top"><img class="logo-img" src="images/logo-320.png" alt="Nari Nikhar logo" width="96" height="96" loading="lazy"><span><span class="logo-name">Nari Nikhar</span><span class="logo-sub">Quality makes the difference</span></span></a>
+  <div><a class="logo foot-logo" href="#top"><img class="logo-img" src="images/logo-320.png" alt="Nari Nikhar logo" width="96" height="96" loading="lazy"><span><span class="logo-name"><span class="wm" aria-label="Nari Nikhar"><span aria-hidden="true">नARI निKHAR</span></span></span><span class="logo-sub">Quality makes the difference</span></span></a>
    <p style="margin-top:14px;max-width:34ch">Party wear, suit sets with dupatta, co-ords and everyday suits. Shop in Hathras or on WhatsApp.</p></div>
   <div><h4>Shop</h4><ul><li><a href="#party">Party &amp; Festive Wear</a></li><li><a href="#printed">Printed Suit Sets</a></li><li><a href="#everyday">Everyday Suits</a></li><li><a href="#video">Video Shopping</a></li></ul></div>
   <div><h4>Help</h4><ul><li><a href="#how">How to order</a></li><li><a href="#faq">Size exchange</a></li><li><a href="#faq">Shipping</a></li><li><a href="#reviews">Reviews</a></li></ul></div>
@@ -700,7 +706,7 @@ BODY = f'''
  <button class="lb-close" id="lbClose" type="button" aria-label="Close">×</button>
  <div class="lb-box">
   <img id="lbImg" src="images/lilac-cape-coord.jpg" alt="">
-  <div class="lb-side"><span class="kick" style="display:flex;align-items:center;gap:8px"><img src="images/logo-192.png" alt="" width="32" height="32" style="border-radius:50%">Nari Nikhar</span><h3 id="lbTitle">Outfit</h3><p id="lbDesc"></p><span class="price" id="lbPrice"></span>
+  <div class="lb-side"><span class="kick" style="display:flex;align-items:center;gap:8px"><img src="images/logo-192.png" alt="" width="32" height="32" style="border-radius:50%"><span class="wm" aria-label="Nari Nikhar"><span aria-hidden="true">नARI निKHAR</span></span></span><h3 id="lbTitle">Outfit</h3><p id="lbDesc"></p><span class="price" id="lbPrice"></span>
    <a class="btn-wa" id="lbWa" href="#" target="_blank" rel="noopener">{WAI}<span>Order on WhatsApp</span></a>
    <ul><li>{ic("check","mi")}5-day size exchange</li><li>{ic("check","mi")}Sizes up to 3XL+ in selected styles</li><li>{ic("check","mi")}Worldwide shipping</li></ul>
   </div>
@@ -746,7 +752,7 @@ JS = '''<script>
 })();
 </script>''' % (json.dumps({k:[v[0],v[1],rs(v[3])] for k,v in P.items()}), WA)
 
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Kalam:wght@700&display=swap">'
+FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Tiro+Devanagari+Hindi&family=Poppins:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Kalam:wght@700&display=swap">'
 DESC = f"Designer suit sets from {rs(lo_all)} at Nari Nikhar, Hathras. Party wear, printed suits and co-ords. 4.6★ on Google. Order on WhatsApp, 5-day size exchange."
 
 mode, out = sys.argv[1], sys.argv[2]
