@@ -1,24 +1,533 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#8b174c"><meta name="description" content="Find your celebration look at Nari Nikhar, Hathras. Shop festive lehengas, ethnic suits, sarees, western wear and co-ord sets on WhatsApp.">
-  <title>Nari Nikhar | Wear the moment</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Nari Nikhar | Women's Boutique, Hathras">
+<meta property="og:description" content="Festive lehengas, ethnic suits, sarees, gowns and co-ord sets. Shop in store or on WhatsApp.">
+<title>Nari Nikhar | Women's Boutique, Hathras</title>
+<meta name="description" content="Nari Nikhar, Hathras — festive lehengas, ethnic suits, sarees, gowns, western wear and co-ord sets. Shop in store or on WhatsApp.">
+<meta name="theme-color" content="#E5197A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Kalam:wght@400;700&display=swap">
+<style>
+/* Layout: a festive bazaar scroll — toran-bunting bands divide bold colour blocks; collage hero, occasion grid, style-chat builder, visit card. Single bright theme by design. */
+:root{
+  --paper:#FFF6FA;      /* blush white */
+  --ink:#2B0A25;        /* plum black */
+  --ink-soft:#6B4A63;
+  --rani:#E5197A;       /* rani pink */
+  --rani-deep:#B30F5E;
+  --marigold:#FFB21E;
+  --kesar:#FF6A2B;      /* saffron */
+  --peacock:#00877D;    /* peacock teal */
+  --peacock-deep:#005E57;
+  --lilac:#E9DDFF;
+  --white:#FFFFFF;
+  --line:rgba(43,10,37,.12);
+  --f-display:"Rozha One","Noto Serif Devanagari",Georgia,"Times New Roman",serif;
+  --f-body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-hand:"Kalam","Comic Sans MS","Segoe Print",cursive;
+  --r:22px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.02;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.hand{font-family:var(--f-hand)}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:6px}
+
+/* toran bunting */
+.toran{height:26px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='26'%3E%3Cpath d='M0 0h200v3H0z' fill='%232B0A25'/%3E%3Cpath d='M0 3h40L20 26z' fill='%23E5197A'/%3E%3Cpath d='M40 3h40L60 26z' fill='%23FFB21E'/%3E%3Cpath d='M80 3h40l-20 23z' fill='%2300877D'/%3E%3Cpath d='M120 3h40l-20 23z' fill='%23FF6A2B'/%3E%3Cpath d='M160 3h40l-20 23z' fill='%23B9A0FF'/%3E%3C/svg%3E") repeat-x 0 0/200px 26px}
+
+/* announcement + header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--white)}
+.announce{background:var(--ink);color:var(--marigold);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:center;padding-block:9px}
+.announce b{color:var(--white);font-weight:700}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--rani) 0 25%,var(--marigold) 0 50%,var(--peacock) 0 75%,var(--kesar) 0);position:relative}
+.brand-mark::after{content:"न";position:absolute;inset:5px;border-radius:50%;background:var(--white);display:grid;place-items:center;font-family:var(--f-display);font-size:1.45rem;color:var(--rani);line-height:1}
+.brand-name{font-family:var(--f-display);font-size:1.45rem;line-height:1}
+.brand-sub{display:block;font-size:.66rem;font-weight:800;letter-spacing:.2em;color:var(--peacock);text-transform:uppercase;margin-top:3px}
+nav.links{display:flex;align-items:center;gap:6px}
+nav.links a{text-decoration:none;font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:999px;transition:background .2s}
+nav.links a:hover{background:var(--lilac)}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:1rem;border-radius:999px;padding:14px 24px;border:2px solid var(--ink);transition:transform .2s,box-shadow .2s;cursor:pointer;font-family:var(--f-body)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.btn-rani{background:var(--rani);color:var(--white)}
+.btn-gold{background:var(--marigold);color:var(--ink)}
+.btn-white{background:var(--white);color:var(--ink)}
+.btn-teal{background:var(--peacock);color:var(--white)}
+.btn-sm{padding:9px 16px;font-size:.9rem}
+.wa-ico{width:20px;height:20px;flex:none}
+.menu-btn{display:none;background:var(--ink);color:var(--white);border:0;border-radius:999px;padding:10px 16px;font-weight:700;font-family:var(--f-body);cursor:pointer}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(circle at 85% 15%,rgba(255,178,30,.35),transparent 40%),
+  radial-gradient(circle at 10% 90%,rgba(0,135,125,.18),transparent 45%),var(--paper)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-block:56px 72px}
+.hero-copy{min-width:0;position:relative;z-index:2}
+.devanagari{font-family:var(--f-display);color:var(--rani);font-size:1.6rem;display:flex;align-items:center;gap:12px}
+.devanagari::after{content:"";height:2px;width:60px;background:var(--rani)}
+.hero h1{font-size:clamp(3.2rem,8vw,6.4rem);margin-top:14px}
+.hero h1 .l2{color:var(--rani);display:block}
+.hero h1 .l3{display:block;background:linear-gradient(90deg,var(--kesar),var(--marigold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lede{font-size:1.2rem;max-width:34ch;margin-top:22px;color:var(--ink-soft)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.perks{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;padding:0;list-style:none}
+.perks li{background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:7px 14px;font-weight:700;font-size:.88rem;display:flex;align-items:center;gap:8px}
+.perks li i{width:10px;height:10px;border-radius:50%;display:inline-block}
+
+.collage{position:relative;min-height:540px}
+.frame{position:absolute;border-radius:var(--r);overflow:hidden;border:6px solid var(--white);box-shadow:0 22px 50px -18px rgba(43,10,37,.45)}
+.ph{position:relative;background:
+  radial-gradient(circle,rgba(255,255,255,.45) 2.2px,transparent 2.8px) 0 0/18px 18px,
+  radial-gradient(circle,rgba(255,255,255,.25) 2.2px,transparent 2.8px) 9px 9px/18px 18px,
+  var(--rani)}
+.ph.gold{background-color:var(--marigold)}
+.ph.teal{background-color:var(--peacock)}
+.ph.kesar{background-color:var(--kesar)}
+.ph img{width:100%;height:100%;object-fit:cover;position:relative}
+.ph .ph-label{position:absolute;inset:auto 0 0 0;padding:14px;font-family:var(--f-display);color:var(--white);font-size:1.4rem;line-height:1.1}
+.f1{width:62%;height:470px;left:4%;top:20px;transform:rotate(-3deg)}
+.f2{width:46%;height:280px;right:0;top:0;transform:rotate(4deg)}
+.f3{width:44%;height:250px;right:4%;bottom:0;transform:rotate(-2deg)}
+.f1 .ph,.f2 .ph,.f3 .ph{height:100%}
+.sticker{position:absolute;z-index:3;font-family:var(--f-hand);font-weight:700;line-height:1.05;text-align:center;display:grid;place-items:center}
+.s-round{width:130px;height:130px;border-radius:50%;background:var(--marigold);color:var(--ink);font-size:1.15rem;left:-10px;bottom:30px;transform:rotate(-12deg);box-shadow:0 0 0 6px var(--paper),0 0 0 8px var(--ink)}
+.s-tag{background:var(--ink);color:var(--white);padding:10px 18px;border-radius:12px;font-size:1.25rem;right:30%;top:-6px;transform:rotate(-6deg)}
+.s-tag b{color:var(--marigold)}
+
+/* marquee */
+.marquee{background:var(--rani);color:var(--white);overflow:hidden;border-block:3px solid var(--ink)}
+.marquee-track{display:flex;width:max-content;animation:scroll 32s linear infinite}
+.marquee span{font-family:var(--f-display);font-size:1.7rem;white-space:nowrap;padding:14px 26px;display:flex;align-items:center;gap:26px}
+.marquee span::after{content:"✿";color:var(--marigold);font-size:1.2rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding-block:88px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head h2{font-size:clamp(2.4rem,5vw,3.8rem);max-width:16ch}
+.sec-head h2 em{font-style:normal;color:var(--rani)}
+.sec-head p{max-width:38ch;color:var(--ink-soft)}
+
+/* how it works */
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.way{border-radius:var(--r);padding:30px;color:var(--white);position:relative;overflow:hidden;min-width:0}
+.way:nth-child(1){background:var(--peacock)}
+.way:nth-child(2){background:var(--kesar)}
+.way:nth-child(3){background:var(--ink)}
+.way .big{font-family:var(--f-display);font-size:3.4rem;line-height:1;color:var(--marigold)}
+.way h3{font-size:1.7rem;margin-top:10px}
+.way p{margin-top:8px;opacity:.92}
+.way::after{content:"";position:absolute;right:-40px;bottom:-40px;width:140px;height:140px;border-radius:50%;border:18px solid rgba(255,255,255,.14)}
+
+/* occasions */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.chip{font-family:var(--f-body);font-weight:700;font-size:.95rem;padding:10px 18px;border-radius:999px;border:2px solid var(--ink);background:var(--white);color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.chip:hover{background:var(--lilac)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--white)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:var(--white);border-radius:var(--r);overflow:hidden;border:2px solid var(--ink);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;min-width:0}
+.card:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:8px 10px 0 var(--c,var(--rani))}
+.card .ph{aspect-ratio:3/4}
+.card .ph img{height:100%}
+.card .badge{position:absolute;top:12px;left:12px;background:var(--white);color:var(--ink);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px;z-index:2}
+.card-body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card-body .eyebrow{color:var(--c,var(--rani));font-size:.7rem}
+.card-body h3{font-size:1.5rem}
+.card-body p{color:var(--ink-soft);font-size:.95rem}
+.card-body a{margin-top:auto;padding-top:10px;font-weight:800;text-decoration:none;color:var(--c,var(--rani))}
+.card-body a:hover{text-decoration:underline}
+.card.is-hidden{display:none}
+.note{margin-top:26px;font-family:var(--f-hand);font-size:1.15rem;color:var(--peacock-deep)}
+
+/* sizes band */
+.sizes{background:var(--marigold);position:relative}
+.sizes .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:80px}
+.sizes h2{font-size:clamp(2.4rem,5vw,4rem)}
+.sizes h2 em{font-style:normal;color:var(--rani-deep)}
+.sizes p{margin-top:16px;max-width:40ch;font-size:1.1rem}
+.sizes .btn{margin-top:26px}
+.size-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.size-row span{width:86px;height:86px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-size:1.6rem;background:var(--white);border:3px solid var(--ink)}
+.size-row span:nth-child(odd){transform:rotate(-6deg)}
+.size-row span.hot{background:var(--rani);color:var(--white);width:110px;height:110px;font-size:2rem}
+
+/* style chat builder */
+.builder{background:var(--ink);color:var(--white);border-radius:32px;padding:44px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;position:relative;overflow:hidden}
+.builder::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.07) 2px,transparent 2.6px) 0 0/22px 22px;pointer-events:none}
+.builder > *{position:relative;min-width:0}
+.builder h2{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+.builder h2 em{font-style:normal;color:var(--marigold)}
+.builder .intro{color:rgba(255,255,255,.75);margin-top:10px;max-width:42ch}
+.q{margin-top:26px}
+.q-label{font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--marigold);margin-bottom:10px;display:block}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font-family:var(--f-body);font-weight:700;font-size:.92rem;padding:9px 15px;border-radius:999px;border:1.5px solid rgba(255,255,255,.35);background:transparent;color:var(--white);cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.opt:hover{border-color:var(--white)}
+.opt[aria-pressed="true"]{background:var(--white);color:var(--ink);border-color:var(--white)}
+.sw{width:14px;height:14px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);flex:none}
+.msg-card{background:var(--paper);color:var(--ink);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:16px;align-self:center}
+.bubble{background:#DCF8C6;border-radius:16px 16px 4px 16px;padding:16px 18px;font-size:1rem;line-height:1.5;box-shadow:0 2px 0 rgba(0,0,0,.08)}
+.msg-meta{font-size:.82rem;color:var(--ink-soft)}
+.msg-card .btn{justify-content:center}
+
+/* story */
+.story .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.story-pic{position:relative}
+.story-pic .ph{aspect-ratio:4/5;border-radius:200px 200px var(--r) var(--r);overflow:hidden;border:3px solid var(--ink)}
+.story-pic .ph img{height:100%}
+.story-pic .sticker{right:-14px;top:40px;background:var(--peacock);color:var(--white);padding:12px 18px;border-radius:14px;font-size:1.2rem;transform:rotate(5deg)}
+.story h2{font-size:clamp(2.4rem,5vw,3.8rem)}
+.story h2 em{font-style:normal;color:var(--peacock)}
+.story .copy p{margin-top:18px;max-width:52ch;color:var(--ink-soft);font-size:1.08rem}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.value{border-top:4px solid var(--c);padding-top:12px;min-width:0}
+.value h3{font-size:1.25rem}
+.value p{margin-top:6px !important;font-size:.92rem !important}
+
+/* visit */
+.visit{background:var(--peacock);color:var(--white)}
+.visit .sec-head h2 em{color:var(--marigold)}
+.visit .sec-head p{color:rgba(255,255,255,.85)}
+.visit-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:22px}
+.panel{border-radius:var(--r);padding:32px;min-width:0}
+.panel.addr{background:var(--white);color:var(--ink);border:3px solid var(--ink)}
+.panel.video{background:var(--rani);color:var(--white);border:3px solid var(--ink);position:relative;overflow:hidden}
+.panel h3{font-size:2rem}
+.addr-lines{font-size:1.15rem;margin-top:14px;line-height:1.5}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;padding-top:20px;border-top:1.5px dashed var(--line)}
+.facts dt{font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--peacock)}
+.facts dd{margin:4px 0 0;font-weight:700;font-size:1.05rem}
+.panel-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.price{font-family:var(--f-display);font-size:4rem;line-height:1;color:var(--marigold);margin-top:12px}
+.price small{font-family:var(--f-body);font-size:1rem;color:var(--white);font-weight:600;margin-left:6px}
+.panel.video p{margin-top:12px;opacity:.95}
+.panel.video .btn{margin-top:22px}
+
+/* footer */
+footer{background:var(--ink);color:rgba(255,255,255,.8)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-block:44px}
+footer .brand-name{color:var(--white)}
+footer .dev{font-family:var(--f-display);color:var(--marigold);font-size:1.3rem;margin-top:6px}
+footer a{color:var(--marigold);font-weight:700;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer small{display:block;margin-top:6px}
+
+/* floating whatsapp */
+.fab{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;background:#25D366;color:var(--white);border:3px solid var(--ink);border-radius:999px;padding:12px 20px 12px 14px;display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;box-shadow:4px 4px 0 var(--ink)}
+.fab svg{width:26px;height:26px}
+
+/* entrance */
+@media (prefers-reduced-motion:no-preference){
+  .rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.3s}.d4{animation-delay:.42s}
+  @keyframes rise{from{transform:translateY(22px)}to{transform:none}}
+  .s-round{animation:wobble 5s ease-in-out infinite}
+  @keyframes wobble{50%{transform:rotate(-4deg) scale(1.04)}}
+}
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none}html{scroll-behavior:auto}}
+
+/* responsive */
+@media (max-width:980px){
+  .hero .wrap,.sizes .wrap,.builder,.story .wrap,.visit-grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .collage{min-height:440px}
+  .f1{height:400px}
+}
+@media (max-width:820px){
+  nav.links{display:none;position:absolute;left:0;right:0;top:100%;background:var(--white);flex-direction:column;align-items:stretch;padding:12px max(20px,env(safe-area-inset-right,0px)) 18px max(20px,env(safe-area-inset-left,0px));border-bottom:2px solid var(--ink)}
+  nav.links.open{display:flex}
+  .menu-btn{display:inline-block}
+  .ways{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .sec{padding-block:64px}
+  .grid{grid-template-columns:1fr 1fr;gap:12px}
+  .card-body{padding:12px}
+  .card-body h3{font-size:1.15rem}
+  .card-body p{display:none}
+  .collage{min-height:380px}
+  .f1{height:330px;width:70%}
+  .f2{height:200px;width:48%}
+  .f3{height:180px;width:46%}
+  .s-round{width:100px;height:100px;font-size:.95rem}
+  .builder{padding:28px 20px;border-radius:24px}
+  .values{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+  .size-row span{width:64px;height:64px;font-size:1.2rem}
+  .size-row span.hot{width:84px;height:84px;font-size:1.5rem}
+  .fab span{display:none}
+  .fab{padding:12px}
+  .brand-sub{display:none}
+}
+</style>
 </head>
-<body class="storefront"><div class="announcement"><span>✦</span> FESTIVE FINDS, FEEL-GOOD FITS <span>✦</span> Ask us about worldwide delivery</div>
-<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">N</span><span><strong>Nari Nikhar</strong><small>HATHRAS · WOMEN'S BOUTIQUE</small></span></a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button><nav class="nav"><a class="active" href="index.html">Home</a><a href="collections.html">Shop styles</a><a href="our-story.html">Our story</a><a href="visit.html">Visit us</a><a class="nav-cta" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar%2C%20help%20me%20find%20an%20outfit!" target="_blank" rel="noreferrer">Shop on WhatsApp <span>↗</span></a></nav></header>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+</svg>
+
+<div class="announce">✦ Festive finds, feel-good fits ✦ <b>Worldwide shipping</b> — just ask</div>
+<header class="top">
+  <div class="wrap" style="position:relative">
+    <a class="brand" href="#home" aria-label="Nari Nikhar home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span><span class="brand-name">Nari Nikhar</span><span class="brand-sub">Women's boutique · Hathras</span></span>
+    </a>
+    <nav class="links" id="nav">
+      <a href="#shop">Shop styles</a>
+      <a href="#chat">Style chat</a>
+      <a href="#story">Our story</a>
+      <a href="#visit">Visit us</a>
+      <a class="btn btn-rani btn-sm" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar%2C%20help%20me%20find%20an%20outfit!" target="_blank" rel="noopener"><svg class="wa-ico"><use href="#wa"/></svg>WhatsApp</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+
 <main>
-<section class="shop-hero"><div class="hero-copy shop-hero-copy"><div class="hero-kicker"><span>THE NEW FESTIVE EDIT</span><i>✦</i><span>HATHRAS, INDIA</span></div><h1>Dress up.<br><em>Show up.</em><br>Shine on.</h1><p class="hero-lede">Your next “where did you get that?” outfit is waiting. Find festive favourites, everyday statements and feel-good fits for every plan.</p><div class="hero-actions"><a class="button button-bright" href="#shop-the-edit">Shop the edit <span>↓</span></a><a class="hero-whatsapp" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar%2C%20help%20me%20pick%20a%20look!" target="_blank" rel="noreferrer"><span class="wa-icon">◉</span> Need help choosing?</a></div><div class="hero-perks"><span>✦ Sizes up to 3XL+</span><span>✦ Video-call shopping</span><span>✦ Worldwide shipping</span></div></div><div class="shop-hero-visual"><div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1300&q=90" alt="Festive saree style for a celebration"><span class="image-chip">YOUR MAIN-CHARACTER<br><b>moment starts here</b></span></div><div class="round-sticker">LOVE<br><b>YOUR</b><br>LOOK ✦</div><div class="hero-scribble">A little extra<br>never hurt ✷</div></div></section>
-<div class="ticker"><div>GOOD VIBES ONLY <span>✿</span> BIG OCCASION ENERGY <span>✿</span> EVERYDAY LOOKS, UPGRADED <span>✿</span> GOOD VIBES ONLY <span>✿</span> BIG OCCASION ENERGY <span>✿</span></div></div>
-<section class="trust-row"><div><b>01</b><span><strong>Find your fit</strong><small>Styles up to 3XL+</small></span></div><div><b>02</b><span><strong>Shop your way</strong><small>In-store or video call</small></span></div><div><b>03</b><span><strong>Go anywhere</strong><small>Worldwide shipping</small></span></div><a href="visit.html">Your boutique, your way <span>↗</span></a></section>
-<section class="shop-section" id="shop-the-edit"><div class="section-heading"><div><p class="eyebrow">PICK YOUR MOOD</p><h2>Okay, what’s the <em>occasion?</em></h2></div><a class="text-link" href="collections.html">See all styles <span>↗</span></a></div><div class="filter-bar" role="group" aria-label="Filter styles"><button class="filter-chip is-active" data-filter="all">Everything <span>✦</span></button><button class="filter-chip" data-filter="festive">Festive glow</button><button class="filter-chip" data-filter="ethnic">Ethnic, always</button><button class="filter-chip" data-filter="everyday">Everyday cute</button></div><div class="product-grid">
-<article class="product-card" data-category="festive"><a class="product-image" href="https://wa.me/919870278767?text=Hi%2C%20I%27m%20interested%20in%20Dandiya%20and%20festive%20lehenga%20styles.%20Can%20you%20show%20me%20what%27s%20available%3F" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=750&q=85" alt="Colorful festive look"><span class="product-tag tag-pink">DANCE-FLOOR READY</span><span class="product-arrow">↗</span></a><div class="product-info"><div><small>FESTIVE · DANDIYA</small><h3>Twirl-worthy lehengas</h3></div><a class="shop-link" href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20Dandiya%20and%20festive%20lehenga%20collection." target="_blank" rel="noreferrer">Ask availability <span>→</span></a></div></article>
-<article class="product-card" data-category="ethnic"><a class="product-image" href="https://wa.me/919870278767?text=Hi%2C%20I%27m%20looking%20for%20Anarkali%20or%20A-line%20suits.%20What%20do%20you%20have%20in%20my%20size%3F" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1583391733956-6c78276477e7?auto=format&fit=crop&w=750&q=85" alt="Ethnic wear inspiration"><span class="product-tag tag-orange">A FOREVER FAVOURITE</span><span class="product-arrow">↗</span></a><div class="product-info"><div><small>ETHNIC · SUITS</small><h3>Anarkali & A-line love</h3></div><a class="shop-link" href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20Anarkali%20and%20A-line%20suits." target="_blank" rel="noreferrer">Ask availability <span>→</span></a></div></article>
-<article class="product-card" data-category="everyday"><a class="product-image" href="https://wa.me/919870278767?text=Hi%2C%20I%27d%20love%20to%20see%20your%20western%20wear%20and%20co-ord%20sets." target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1610030469668-8e9f641aaf4d?auto=format&fit=crop&w=750&q=85" alt="Contemporary everyday style"><span class="product-tag tag-yellow">CUTE PLANS, CHECK</span><span class="product-arrow">↗</span></a><div class="product-info"><div><small>WESTERN · CO-ORDS</small><h3>Easy sets, big energy</h3></div><a class="shop-link" href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20western%20wear%20and%20co-ord%20sets." target="_blank" rel="noreferrer">Ask availability <span>→</span></a></div></article>
-<article class="product-card" data-category="ethnic"><a class="product-image" href="https://wa.me/919870278767?text=Hi%2C%20I%27m%20looking%20for%20sarees%20or%20gowns.%20Can%20you%20show%20me%20the%20latest%20styles%3F" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=750&q=85" alt="Saree and gown styling inspiration"><span class="product-tag tag-lilac">THE GRAND ENTRANCE</span><span class="product-arrow">↗</span></a><div class="product-info"><div><small>ETHNIC · OCCASION</small><h3>Sarees & showstoppers</h3></div><a class="shop-link" href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20latest%20sarees%20and%20gowns." target="_blank" rel="noreferrer">Ask availability <span>→</span></a></div></article>
-</div><p class="stock-note">Our collection keeps changing. Message us for current styles, colours, sizes and prices.</p></section>
-<section class="fit-banner"><div class="fit-banner-art"><img src="https://images.unsplash.com/photo-1610030469668-8e9f641aaf4d?auto=format&fit=crop&w=750&q=85" alt="Fashion for every body"></div><div><p class="eyebrow">ALL BODIES. ALL THE GOOD OUTFITS.</p><h2>Your size is<br><em>always in style.</em></h2><p>Looking for a fit that feels just right? Ask us about plus sizes up to 3XL+ and we’ll help you find your look.</p><a class="button button-dark" href="https://wa.me/919870278767?text=Hi%2C%20I%27d%20like%20help%20finding%20my%20size.%20Do%20you%20have%20styles%20up%20to%203XL%2B%3F" target="_blank" rel="noreferrer">Find my fit on WhatsApp ↗</a></div><span class="fit-doodle">✳</span></section>
-<section class="shop-cta"><p class="eyebrow">THE FUN PART STARTS HERE</p><h2>Found your vibe?<br><em>Let’s find your outfit.</em></h2><p>Send us your occasion, your size and your favourite colour. We’ll share the styles we have in store.</p><a class="button button-bright" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar!%20I%27m%20shopping%20for%20an%20outfit.%20My%20occasion%20is%20___%2C%20my%20size%20is%20___%2C%20and%20I%20love%20the%20colour%20___." target="_blank" rel="noreferrer"><span class="wa-icon">◉</span> Start your style chat</a><small>No checkout here—our team will help with availability and pricing on WhatsApp.</small></section>
-<section class="visit-teaser"><div><p class="eyebrow">IN HATHRAS? COME TRY IT ON.</p><h2>Your fitting-room<br>mirror moment awaits.</h2><a class="text-link" href="visit.html">Find the boutique <span>↗</span></a></div><div class="visit-teaser-photo"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85" alt="A celebration-ready outfit"><span>Open every day · 11am–8pm</span></div></section>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="devanagari rise">नारी निखार</div>
+      <h1 class="rise d1">Dress up.<span class="l2">Show up.</span><span class="l3">Shine on.</span></h1>
+      <p class="lede rise d2">Lehengas that twirl, suits that flatter and sarees that steal the room. Your next “where did you get that?” outfit is waiting in Hathras.</p>
+      <div class="hero-ctas rise d3">
+        <a class="btn btn-rani" href="#shop">Shop the edit ↓</a>
+        <a class="btn btn-white" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar%2C%20help%20me%20pick%20a%20look!" target="_blank" rel="noopener"><svg class="wa-ico"><use href="#wa"/></svg>Help me choose</a>
+      </div>
+      <ul class="perks rise d4">
+        <li><i style="background:var(--rani)"></i>Sizes up to 3XL+</li>
+        <li><i style="background:var(--marigold)"></i>Video-call shopping</li>
+        <li><i style="background:var(--peacock)"></i>Worldwide shipping</li>
+      </ul>
+    </div>
+    <div class="collage" aria-hidden="false">
+      <div class="frame f1 rise d1"><div class="ph"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85" alt="Woman in a festive saree" onerror="this.remove()"></div></div>
+      <div class="frame f2 rise d2"><div class="ph gold"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=85" alt="Colourful festive lehenga" onerror="this.remove()"></div></div>
+      <div class="frame f3 rise d3"><div class="ph teal"><img src="https://images.unsplash.com/photo-1583391733956-6c78276477e7?auto=format&fit=crop&w=700&q=85" alt="Ethnic suit look" onerror="this.remove()"></div></div>
+      <div class="sticker s-round">your<br>main-character<br>moment ✦</div>
+      <div class="sticker s-tag">New <b>festive</b> edit</div>
+    </div>
+  </div>
+  <div class="toran" aria-hidden="true"></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Navratri nights</span><span>Dandiya ready</span><span>Shaadi season</span><span>Karva Chauth glow</span><span>Diwali dazzle</span><span>Everyday cute</span>
+    <span>Navratri nights</span><span>Dandiya ready</span><span>Shaadi season</span><span>Karva Chauth glow</span><span>Diwali dazzle</span><span>Everyday cute</span>
+  </div>
+</div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="ways">
+      <div class="way"><div class="big">3XL+</div><h3>Find your fit</h3><p>Styles for every body, with extended sizes in selected designs.</p></div>
+      <div class="way"><div class="big">₹300</div><h3>Shop your way</h3><p>Walk into the store, or browse live with us on a video call.</p></div>
+      <div class="way"><div class="big">🌏</div><h3>Go anywhere</h3><p>Living abroad? We ship worldwide. Ask us for options.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="shop" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="color:var(--peacock)">Pick your mood</div>
+        <h2>Okay, what’s the <em>occasion?</em></h2>
+      </div>
+      <p>Tap a mood, then message us about any style. We’ll send you what’s in store, in your size.</p>
+    </div>
+    <div class="chips" role="group" aria-label="Filter styles">
+      <button class="chip" data-filter="all" aria-pressed="true">Everything ✦</button>
+      <button class="chip" data-filter="festive" aria-pressed="false">Festive glow</button>
+      <button class="chip" data-filter="ethnic" aria-pressed="false">Ethnic, always</button>
+      <button class="chip" data-filter="everyday" aria-pressed="false">Everyday cute</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-cat="festive" style="--c:var(--rani)">
+        <div class="ph"><span class="badge">Dandiya ready</span><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=85" alt="Twirl-worthy festive lehenga" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body"><span class="eyebrow">Festive · Lehengas</span><h3>Twirl-worthy lehengas</h3><p>Flared, mirrored and made for Navratri nights.</p><a href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20Dandiya%20and%20festive%20lehenga%20collection." target="_blank" rel="noopener">Ask availability →</a></div>
+      </article>
+      <article class="card" data-cat="ethnic" style="--c:var(--peacock)">
+        <div class="ph teal"><span class="badge">Forever favourite</span><img src="https://images.unsplash.com/photo-1583391733956-6c78276477e7?auto=format&fit=crop&w=700&q=85" alt="Anarkali suit" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body"><span class="eyebrow">Ethnic · Suits</span><h3>Anarkali &amp; A-line love</h3><p>Anarkali, Pakistani and A-line suits for every gathering.</p><a href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20Anarkali%20and%20A-line%20suits." target="_blank" rel="noopener">Ask availability →</a></div>
+      </article>
+      <article class="card" data-cat="everyday" style="--c:var(--kesar)">
+        <div class="ph kesar"><span class="badge">Cute plans</span><img src="https://images.unsplash.com/photo-1610030469668-8e9f641aaf4d?auto=format&fit=crop&w=700&q=85" alt="Co-ord set" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body"><span class="eyebrow">Western · Co-ords</span><h3>Easy sets, big energy</h3><p>Western wear and co-ords for brunch, college and travel.</p><a href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20western%20wear%20and%20co-ord%20sets." target="_blank" rel="noopener">Ask availability →</a></div>
+      </article>
+      <article class="card" data-cat="festive ethnic" style="--c:#8A55E0">
+        <div class="ph gold"><span class="badge">Grand entrance</span><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=85" alt="Saree" loading="lazy" onerror="this.remove()"></div>
+        <div class="card-body"><span class="eyebrow">Occasion · Sarees</span><h3>Sarees &amp; showstoppers</h3><p>Sarees and gowns for weddings and big nights out.</p><a href="https://wa.me/919870278767?text=Hi%2C%20show%20me%20your%20latest%20sarees%20and%20gowns." target="_blank" rel="noopener">Ask availability →</a></div>
+      </article>
+    </div>
+    <p class="note">✎ New pieces arrive all the time. Message us for today’s styles, colours, sizes and prices.</p>
+  </div>
+</section>
+
+<section class="sizes" aria-labelledby="sizes-h">
+  <div class="toran" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">All bodies. All the good outfits.</div>
+      <h2 id="sizes-h">Your size is <em>always in style.</em></h2>
+      <p>Looking for a fit that feels just right? Ask about plus sizes up to 3XL+ and we’ll help you find your look.</p>
+      <a class="btn btn-white" href="https://wa.me/919870278767?text=Hi%2C%20I%27d%20like%20help%20finding%20my%20size.%20Do%20you%20have%20styles%20up%20to%203XL%2B%3F" target="_blank" rel="noopener"><svg class="wa-ico"><use href="#wa"/></svg>Find my fit</a>
+    </div>
+    <div class="size-row" aria-hidden="true"><span>S</span><span>M</span><span>L</span><span>XL</span><span>2XL</span><span class="hot">3XL+</span></div>
+  </div>
+</section>
+
+<section class="sec" id="chat">
+  <div class="wrap">
+    <div class="builder">
+      <div>
+        <div class="eyebrow" style="color:var(--marigold)">Your style chat</div>
+        <h2>Found your vibe? <em>Let’s find your outfit.</em></h2>
+        <p class="intro">Pick three things and we’ll write the WhatsApp message for you. Our team replies with styles that are in store right now.</p>
+        <div class="q"><span class="q-label">1 · The occasion</span><div class="opts" data-q="occasion">
+          <button class="opt" aria-pressed="true">Wedding</button><button class="opt" aria-pressed="false">Navratri / Dandiya</button><button class="opt" aria-pressed="false">Diwali &amp; festivals</button><button class="opt" aria-pressed="false">Party</button><button class="opt" aria-pressed="false">Everyday</button>
+        </div></div>
+        <div class="q"><span class="q-label">2 · Your size</span><div class="opts" data-q="size">
+          <button class="opt" aria-pressed="false">S</button><button class="opt" aria-pressed="true">M</button><button class="opt" aria-pressed="false">L</button><button class="opt" aria-pressed="false">XL</button><button class="opt" aria-pressed="false">2XL</button><button class="opt" aria-pressed="false">3XL+</button>
+        </div></div>
+        <div class="q"><span class="q-label">3 · Favourite colour</span><div class="opts" data-q="colour">
+          <button class="opt" aria-pressed="true"><i class="sw" style="background:#E5197A"></i>Rani pink</button><button class="opt" aria-pressed="false"><i class="sw" style="background:#C8102E"></i>Red</button><button class="opt" aria-pressed="false"><i class="sw" style="background:#FFB21E"></i>Marigold</button><button class="opt" aria-pressed="false"><i class="sw" style="background:#0B7A4B"></i>Emerald</button><button class="opt" aria-pressed="false"><i class="sw" style="background:#1F3FA8"></i>Royal blue</button><button class="opt" aria-pressed="false"><i class="sw" style="background:#F3D3E3"></i>Pastel</button><button class="opt" aria-pressed="false"><i class="sw" style="background:conic-gradient(#E5197A,#FFB21E,#00877D,#E5197A)"></i>Surprise me</button>
+        </div></div>
+      </div>
+      <div class="msg-card">
+        <div class="msg-meta">Your message to Nari Nikhar</div>
+        <div class="bubble" id="bubble" aria-live="polite">Hi Nari Nikhar! I’m shopping for a wedding outfit. My size is M and I love rani pink. What do you have?</div>
+        <a class="btn btn-rani" id="sendBtn" href="#" target="_blank" rel="noopener"><svg class="wa-ico"><use href="#wa"/></svg>Send on WhatsApp</a>
+        <div class="msg-meta">No checkout here. We share availability and prices on chat · +91 98702 78767</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec story" id="story" style="padding-top:0">
+  <div class="wrap">
+    <div class="story-pic">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1610030469668-8e9f641aaf4d?auto=format&fit=crop&w=800&q=85" alt="Festive Indian fashion at Nari Nikhar" loading="lazy" onerror="this.remove()"></div>
+      <div class="sticker">made with ♥ in Hathras</div>
+    </div>
+    <div class="copy">
+      <div class="eyebrow" style="color:var(--rani)">A Hathras boutique with heart</div>
+      <h2 style="margin-top:10px">Clothes are lovely. <em>Feeling lovely is everything.</em></h2>
+      <p>Nari Nikhar is where you find the outfit that feels like you, whether you’re getting ready for a big celebration or just want something special.</p>
+      <p>We bring together festive favourites, ethnic classics and easy everyday styles, for every mood, moment and size.</p>
+      <div class="values">
+        <div class="value" style="--c:var(--rani)"><h3>Personal attention</h3><p>Drop in, or book a video shopping call and browse with us.</p></div>
+        <div class="value" style="--c:var(--marigold)"><h3>More ways to wear</h3><p>Co-ords and western wear to lehengas, suits, sarees and gowns.</p></div>
+        <div class="value" style="--c:var(--peacock)"><h3>Room for everyone</h3><p>Extended sizing up to 3XL+ in selected styles.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="color:var(--marigold)">In Hathras? Come try it on</div>
+        <h2>Your mirror moment <em>awaits.</em></h2>
+      </div>
+      <p>Browse in person, or let us help you shop from wherever you are.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="panel addr">
+        <h3>Find us in Naya Ganj</h3>
+        <p class="addr-lines">Naya Ganj, Subji Mandi<br>Opposite Maheshwari Dharamshala<br>Hathras, Uttar Pradesh, India</p>
+        <dl class="facts">
+          <div><dt>Hours</dt><dd>Every day · 11 AM – 8 PM</dd></div>
+          <div><dt>Call / WhatsApp</dt><dd><a href="tel:+919870278767" style="text-decoration:none">+91 98702 78767</a></dd></div>
+        </dl>
+        <div class="panel-ctas">
+          <a class="btn btn-teal" href="https://www.google.com/maps/search/?api=1&query=Nari+Nikhar+Naya+Ganj+Hathras" target="_blank" rel="noopener">Open in Maps ↗</a>
+          <a class="btn btn-white" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar%2C%20I%27m%20planning%20to%20visit.%20Can%20you%20help%3F" target="_blank" rel="noopener">Plan my visit</a>
+        </div>
+      </div>
+      <div class="panel video">
+        <div class="eyebrow" style="color:var(--marigold)">Shop from home</div>
+        <h3>Your own video shopping trip</h3>
+        <div class="price">₹300<small>booking fee</small></div>
+        <p>Browse styles live over a personal video call. The booking fee is adjusted in your final bill.</p>
+        <a class="btn btn-gold" href="https://wa.me/919870278767?text=Hi%2C%20I%27d%20like%20to%20book%20a%20video%20shopping%20appointment." target="_blank" rel="noopener">Book a video call ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="footer"><a class="brand brand-light" href="index.html"><span class="brand-mark">N</span><span><strong>Nari Nikhar</strong><small>HATHRAS · WOMEN'S BOUTIQUE</small></span></a><p>Naya Ganj, Subji Mandi<br>Opp. Maheshwari Dharamshala, Hathras</p><p><a href="tel:+919870278767">+91 98702 78767</a><br>Open daily · 11:00 AM–8:00 PM</p><div class="footer-bottom"><span>© <span data-year></span> Nari Nikhar, Hathras</span><span>Wear what makes you feel wonderful.</span><a href="https://www.instagram.com/narinikhar/" target="_blank" rel="noreferrer">Instagram ↗</a></div></footer><a class="whatsapp-float" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar!" aria-label="Shop with Nari Nikhar on WhatsApp" target="_blank" rel="noreferrer"><span class="wa-icon">◉</span><b>Chat to shop</b></a><script src="main.js"></script></body></html>
+
+<footer>
+  <div class="toran" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="brand-name">Nari Nikhar</div>
+      <div class="dev">नारी निखार</div>
+      <small>Wear what makes you feel wonderful.</small>
+    </div>
+    <div>
+      Naya Ganj, Subji Mandi<br>Opp. Maheshwari Dharamshala, Hathras
+      <small>Open daily · 11:00 AM – 8:00 PM</small>
+    </div>
+    <div>
+      <a href="tel:+919870278767">+91 98702 78767</a><br>
+      <a href="https://www.instagram.com/narinikhar/" target="_blank" rel="noopener">Instagram ↗</a>
+      <small>© <span data-year>2026</span> Nari Nikhar, Hathras</small>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/919870278767?text=Hi%20Nari%20Nikhar!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#wa"/></svg><span>Chat to shop</span></a>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){var o=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!o));nav.classList.toggle('open',!o)});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
+  document.querySelectorAll('[data-year]').forEach(function(el){el.textContent=new Date().getFullYear()});
+
+  var chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.card[data-cat]');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    var f=c.dataset.filter;
+    chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c))});
+    cards.forEach(function(card){card.classList.toggle('is-hidden',f!=='all'&&card.dataset.cat.split(' ').indexOf(f)<0)});
+  })});
+
+  var bubble=document.getElementById('bubble'),send=document.getElementById('sendBtn');
+  function pick(q){var b=document.querySelector('[data-q="'+q+'"] [aria-pressed="true"]');return b?b.textContent.trim():''}
+  function update(){
+    var occ=pick('occasion'),size=pick('size'),col=pick('colour');
+    var occText={'Wedding':'a wedding outfit','Navratri / Dandiya':'a Navratri / Dandiya outfit','Diwali & festivals':'a Diwali / festival outfit','Party':'a party outfit','Everyday':'something for everyday'}[occ]||'an outfit';
+    var colText=col==='Surprise me'?'I’m open to any colour, surprise me':'I love '+col.toLowerCase();
+    var msg='Hi Nari Nikhar! I’m shopping for '+occText+'. My size is '+size+' and '+colText+'. What do you have?';
+    bubble.textContent=msg;
+    send.href='https://wa.me/919870278767?text='+encodeURIComponent(msg);
+  }
+  document.querySelectorAll('.opts').forEach(function(g){g.addEventListener('click',function(e){
+    var b=e.target.closest('.opt');if(!b)return;
+    g.querySelectorAll('.opt').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});update();
+  })});
+  update();
+})();
+</script>
+</body>
+</html>
