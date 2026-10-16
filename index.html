@@ -176,7 +176,8 @@ footer .logo-sub{color:rgba(255,255,255,.6)}
 .fab{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
 .fab .wa{width:30px;height:30px}
 [hidden]{display:none!important}
-.lb{position:fixed;inset:0;z-index:90;background:rgba(20,12,19,.86);display:flex;align-items:center;justify-content:center;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb.open{display:flex}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(20,12,19,.86);display:none;align-items:center;justify-content:center;padding:calc(20px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .lb-box{background:#fff;display:grid;grid-template-columns:auto 320px;max-width:1000px;max-height:100%;overflow:auto}
 .lb-box img{max-height:86vh;width:auto;object-fit:contain}
 .lb-side{padding:34px 28px;display:flex;flex-direction:column;gap:10px}
@@ -703,12 +704,12 @@ footer h4{color:var(--marigold);font-weight:800}
  var lb=document.getElementById('lb'),li=document.getElementById('lbImg'),lt=document.getElementById('lbTitle'),ld=document.getElementById('lbDesc'),lw=document.getElementById('lbWa'),last;
  function open(slug){var p=P[slug];last=document.activeElement;li.src='images/'+slug+'.jpg';li.alt=p[0];lt.textContent=p[0];ld.textContent=p[1];document.getElementById('lbPrice').textContent=p[2];
   lw.href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hi Nari Nikhar! I would like to order the '+p[0]+' ('+p[2]+') from your website. Is it available in my size?');
-  lb.hidden=false;document.body.style.overflow='hidden';document.getElementById('lbClose').focus()}
- function close(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}
+  lb.hidden=false;lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus()}
+ function close(){lb.hidden=true;lb.classList.remove('open');document.body.style.overflow='';if(last)last.focus()}
  document.querySelectorAll('[data-zoom]').forEach(function(b){b.addEventListener('click',function(){open(b.dataset.zoom)})});
  document.getElementById('lbClose').addEventListener('click',close);
  lb.addEventListener('click',function(e){if(e.target===lb)close()});
- document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)close()});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))close()});
 })();
 </script>
 </body>
