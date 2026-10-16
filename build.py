@@ -146,9 +146,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
-.mandala{width:42px;height:42px;color:var(--rose);flex:none}
+.logo-img{width:56px;height:56px;border-radius:50%;flex:none;box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(217,0,108,.35)}
+.foot-logo .logo-img{width:96px;height:96px;box-shadow:none}
 .logo-name{display:block;font-family:var(--f-display);font-size:1.75rem;line-height:1}
-.logo-sub{display:block;font-size:.62rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--rose);margin-top:4px}
+.logo-sub{display:block;font-size:.62rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-top:4px}
 nav.main ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
 nav.main a{display:block;padding:8px 12px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.94rem}
 nav.main a:hover{background:var(--blush);color:var(--rose)}
@@ -252,7 +253,7 @@ nav.main a:hover{background:var(--blush);color:var(--rose)}
 .sw{width:13px;height:13px;border-radius:50%;flex:none;border:1px solid rgba(255,255,255,.6)}
 .chat{background:#ECE5DD;border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:12px;align-self:center;color:var(--ink)}
 .chat-top{display:flex;align-items:center;gap:10px;font-weight:800}
-.chat-top .av{width:36px;height:36px;border-radius:50%;background:var(--rose);color:#fff;display:grid;place-items:center;font-family:var(--f-display)}
+.chat-top .av{width:36px;height:36px;border-radius:50%;flex:none}
 .chat-top small{display:block;font-weight:600;color:var(--muted);font-size:.75rem}
 .bubble{align-self:flex-end;background:#DCF8C6;border-radius:14px 14px 4px 14px;padding:12px 14px;font-size:.98rem;line-height:1.45;box-shadow:0 1px 0 rgba(0,0,0,.12);max-width:100%}
 .chat .btn-wa{width:100%}
@@ -319,7 +320,6 @@ nav.main a:hover{background:var(--blush);color:var(--rose)}
 footer{background:var(--ink);color:rgba(255,255,255,.8);font-size:.93rem}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px;padding-block:50px 36px}
 footer .logo{color:#fff}
-footer .mandala{color:var(--sun)}
 footer .logo-sub{color:var(--sun)}
 footer h4{margin:0 0 12px;color:var(--sun);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
 footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
@@ -387,7 +387,7 @@ footer a:hover{color:#fff;text-decoration:underline}
   .strip-in{justify-content:flex-start;animation:tick 22s linear infinite;width:max-content}
   @keyframes tick{to{transform:translateX(-50%)}}
   .dup{display:contents}
-  .logo-name{font-size:1.45rem}.mandala{width:34px;height:34px}.logo-sub{letter-spacing:.16em}
+  .logo-name{font-size:1.4rem}.logo-img{width:46px;height:46px}.logo-sub{letter-spacing:.12em;font-size:.56rem}
   .hero .lede{font-size:1.05rem}
   .hero-cta .btn-wa{width:100%}
   .hero-cta .btn-ghost{width:100%;justify-content:center}
@@ -410,6 +410,104 @@ footer a:hover{color:#fff;text-decoration:underline}
   .foot{grid-template-columns:1fr}
   .promo-pics img:last-child{margin-top:20px}
 }
+
+/* ===== Logo theme: charcoal + hot pink brush ring, high contrast ===== */
+:root{--char:#2B2B2F;--char-2:#38383D;--char-3:#1E1E21;--pink:#FF2E8B;--rose:#E0006E;--rose-2:#B0005A;--pink-soft:#FFE4F1;--blush:#FFF0F7;
+  --f-display:"Poppins","Hanken Grotesk",system-ui,sans-serif}
+h1,h2,.logo-name,.fee,.score .num,.step::before{font-family:var(--f-display)!important;font-weight:800!important;letter-spacing:-.015em}
+.logo-name{letter-spacing:.02em;text-transform:uppercase;font-size:1.35rem}
+/* brush divider replaces the bunting */
+.toran{height:14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='14' viewBox='0 0 400 14'%3E%3Cpath d='M0 8 C60 2 120 12 200 7 S330 3 400 8' fill='none' stroke='%23FF2E8B' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M0 10 C80 6 150 13 220 9 S350 6 400 11' fill='none' stroke='%23FF2E8B' stroke-opacity='.45' stroke-width='2'/%3E%3C/svg%3E") repeat-x 0 0/400px 14px}
+/* strip + header in logo colours */
+.strip{background:var(--pink);color:#fff}
+.strip b{color:#fff;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.strip .stars{color:#fff}
+body::before{background:var(--char)}
+header.top{background:var(--char);box-shadow:none}
+header.top .logo{color:#fff}
+.logo-sub{color:var(--pink)}
+.logo-img{box-shadow:0 0 0 2px var(--pink)}
+nav.main a{color:#fff}
+nav.main a:hover{background:var(--pink);color:#fff}
+.menu-btn{background:var(--char);color:#fff;border-color:#fff}
+@media (max-width:1080px){nav.main.open{background:var(--char)}}
+/* hero: charcoal stage, pink brush circle behind the photos */
+.hero{background:radial-gradient(circle at 78% 40%,#3A3A40 0,var(--char) 55%,var(--char-3) 100%);color:#fff}
+.hero::before{display:none}
+.eyebrow{background:rgba(255,46,139,.14);border-color:var(--pink);color:#fff}
+.hero h1{color:#fff}
+.hero h1 em{color:var(--pink)}
+.hero h1 .price-hl{background:none;color:var(--pink);text-decoration:underline;text-decoration-color:var(--pink);text-decoration-thickness:5px;text-underline-offset:8px}
+.hero .lede{color:rgba(255,255,255,.82)}
+.proof li{color:#fff}
+.proof .ic{color:var(--pink)}
+.hero .btn-ghost{background:transparent;color:#fff;border-color:#fff}
+.hero .btn-ghost:hover{background:#fff;color:var(--char)}
+.collage{isolation:isolate}
+.collage::before{content:"";position:absolute;z-index:-1;inset:-34px -26px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23FF2E8B' stroke-linecap='round'%3E%3Cellipse cx='100' cy='100' rx='93' ry='90' stroke-width='3.2' stroke-dasharray='420 30 40 12'/%3E%3Cellipse cx='101' cy='99' rx='90' ry='93' stroke-width='1.4' stroke-opacity='.6' stroke-dasharray='300 20 60 25'/%3E%3Cellipse cx='99' cy='101' rx='95' ry='88' stroke-width='.8' stroke-opacity='.45'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
+.ph{box-shadow:0 0 0 3px var(--char),0 18px 40px -16px rgba(0,0,0,.7)}
+.ptag i{color:var(--rose)}
+.sticker{background:var(--pink);box-shadow:0 0 0 5px var(--char),0 10px 24px -8px rgba(255,46,139,.7)}
+/* section headings with a pink brush underline */
+.sec-head h2::after,.row-head h2::after{content:"";display:block;width:110px;height:10px;margin-top:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='10'%3E%3Cpath d='M3 6 C30 2 70 9 107 4' fill='none' stroke='%23FF2E8B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat}
+.sec-head h2::after{margin-inline:auto}
+.kick{color:var(--rose)}
+/* category rings in pink brush tones */
+.ring{background:conic-gradient(var(--pink) 0 30%,var(--char) 0 34%,var(--pink) 0 64%,#FF8CC0 0 70%,var(--pink) 0 96%,var(--char) 0)}
+.circles a{color:var(--char)}
+.circles a:hover{color:var(--rose)}
+/* product rows: alternate charcoal / white / pink for contrast */
+.tone-rose{background:var(--char);--c:var(--pink)}
+.tone-rose .row-head h2{color:#fff}
+.tone-rose .row-head p{color:rgba(255,255,255,.78)}
+.tone-rose .row-head b{color:var(--pink)}
+.tone-rose .row-ctrl button{background:transparent;border-color:#fff;color:#fff}
+.tone-rose .row-ctrl button:hover{background:var(--pink);border-color:var(--pink)}
+.tone-violet{background:#fff;--c:var(--rose)}
+.tone-violet .row-head h2,.tone-teal .row-head h2{color:var(--char)}
+.tone-teal{background:var(--pink-soft);--c:var(--rose)}
+.prod{box-shadow:0 0 0 2px var(--char),0 14px 28px -16px rgba(0,0,0,.45)}
+.tone-rose .prod{box-shadow:0 0 0 2px var(--pink),0 16px 30px -14px rgba(0,0,0,.8)}
+.prod:hover{box-shadow:0 0 0 3px var(--pink),0 20px 36px -16px rgba(0,0,0,.5)}
+.label{background:var(--pink);color:#fff}
+.price{color:var(--rose)}
+/* reviews on hot pink, charcoal score */
+.reviews{background-color:var(--pink)}
+.reviews .kick{color:#fff}
+.reviews .sec-head h2::after{filter:brightness(0) invert(1)}
+.score{background:var(--char)}
+.score .num,.score a{color:var(--pink)}
+.score .stars{color:var(--sun)}
+.rev{box-shadow:0 0 0 2px var(--char)}
+/* finder */
+.finder{background:var(--char)}
+.finder h2 em,.finder .kick,.q-l{color:var(--pink)!important}
+.opt[aria-pressed="true"]{background:var(--pink);border-color:var(--pink);color:#fff}
+/* steps & guarantee */
+#how{background:var(--pink-soft)!important}
+.step{border-color:var(--char)}
+.step::before{background:var(--pink);color:#fff;border-color:var(--char)}
+.g .ic{color:var(--rose)}
+.guarantee{box-shadow:0 0 0 2px var(--char)}
+.g+.g{border-color:var(--char)}
+/* video promo: charcoal with pink */
+.promo{background-color:var(--char)}
+.promo .kick,.fee{color:var(--pink)!important}
+.promo-pics img{border-color:var(--pink)}
+/* faq + visit */
+.faq details{border-color:var(--char)}
+.faq summary::after{color:var(--pink)}
+.visit h2 em{color:var(--rose)}
+.visit-pic::after{background:var(--pink)}
+.vi .ic{color:var(--rose)}
+/* closing CTA + footer */
+.close{background-color:var(--pink)}
+footer{background:var(--char-3)}
+footer h4,footer .logo-sub{color:var(--pink)}
+footer .logo{color:#fff}
+.copyline{border-color:rgba(255,46,139,.35)}
+.lb-side .price{color:var(--rose)}
+@media (max-width:560px){.logo-name{font-size:1.1rem}.collage::before{inset:-18px -12px}}
 '''
 
 lo_all = min(v[3] for v in P.values())
@@ -420,7 +518,7 @@ BODY = f'''
 <div class="strip"><div class="strip-in">{STRIP}<span class="dup" aria-hidden="true"></span></div></div>
 <header class="top">
  <div class="wrap bar" style="position:relative">
-  <a class="logo" href="#top" aria-label="Nari Nikhar home">{MANDALA}<span><span class="logo-name">Nari Nikhar</span><span class="logo-sub">Women's Clothing · Hathras</span></span></a>
+  <a class="logo" href="#top" aria-label="Nari Nikhar home"><img class="logo-img" src="images/logo-192.png" alt="Nari Nikhar logo" width="56" height="56"><span><span class="logo-name">Nari Nikhar</span><span class="logo-sub">Quality makes the difference</span></span></a>
   <nav class="main" id="mainNav" aria-label="Main"><ul>{''.join(f'<li><a href="{h}">{t}</a></li>' for h,t in HEAD_NAV)}</ul></nav>
   <div style="display:flex;gap:10px;align-items:center">
    {btn_wa("Hi Nari Nikhar! I would like to order an outfit.", "Order on WhatsApp")}
@@ -498,7 +596,7 @@ BODY = f'''
     </div></div>
    </div>
    <div class="chat">
-    <div class="chat-top"><span class="av">न</span><span>Nari Nikhar<small>+91 98702 78767</small></span></div>
+    <div class="chat-top"><img class="av" src="images/logo-192.png" alt="" width="36" height="36"><span>Nari Nikhar<small>+91 98702 78767</small></span></div>
     <div class="bubble" id="bubble" aria-live="polite">Hi Nari Nikhar! I'm looking for a wedding outfit in size M, budget ₹2,000 – ₹3,000. Please show me what you have.</div>
     <a class="btn-wa" id="finderBtn" href="#" target="_blank" rel="noopener">{WAI}<span>Send on WhatsApp</span></a>
    </div>
@@ -586,13 +684,13 @@ BODY = f'''
 <footer>
  <div class="toran" aria-hidden="true"></div>
  <div class="wrap foot">
-  <div><a class="logo" href="#top">{MANDALA}<span><span class="logo-name">Nari Nikhar</span><span class="logo-sub">Women's Clothing · Hathras</span></span></a>
+  <div><a class="logo foot-logo" href="#top"><img class="logo-img" src="images/logo-320.png" alt="Nari Nikhar logo" width="96" height="96" loading="lazy"><span><span class="logo-name">Nari Nikhar</span><span class="logo-sub">Quality makes the difference</span></span></a>
    <p style="margin-top:14px;max-width:34ch">Party wear, suit sets with dupatta, co-ords and everyday suits. Shop in Hathras or on WhatsApp.</p></div>
   <div><h4>Shop</h4><ul><li><a href="#party">Party &amp; Festive Wear</a></li><li><a href="#printed">Printed Suit Sets</a></li><li><a href="#everyday">Everyday Suits</a></li><li><a href="#video">Video Shopping</a></li></ul></div>
   <div><h4>Help</h4><ul><li><a href="#how">How to order</a></li><li><a href="#faq">Size exchange</a></li><li><a href="#faq">Shipping</a></li><li><a href="#reviews">Reviews</a></li></ul></div>
   <div><h4>Visit us</h4><p>Naya Ganj, Subji Mandi<br>Opp. Maheshwari Dharamshala, Hathras</p><p style="margin-top:10px">+91 98702 78767<br>Mon – Sat · 11 AM – 8 PM<br>Sunday · 12 PM – 6 PM</p><p style="margin-top:10px"><a href="https://www.instagram.com/narinikhar/" target="_blank" rel="noopener">Instagram ↗</a></p></div>
  </div>
- <div class="copyline"><div class="wrap"><span>© <span data-year>2026</span> Nari Nikhar, Hathras</span><span>Wear what makes you feel wonderful.</span></div></div>
+ <div class="copyline"><div class="wrap"><span>© <span data-year>2026</span> Nari Nikhar, Hathras</span><span>Quality makes the difference.</span></div></div>
 </footer>
 
 <a class="fab" href="{wa('Hi Nari Nikhar! I would like help choosing an outfit.')}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="ping"></span>{WAI}<span>Chat with us</span></a>
@@ -602,7 +700,7 @@ BODY = f'''
  <button class="lb-close" id="lbClose" type="button" aria-label="Close">×</button>
  <div class="lb-box">
   <img id="lbImg" src="images/lilac-cape-coord.jpg" alt="">
-  <div class="lb-side"><span class="kick">Nari Nikhar</span><h3 id="lbTitle">Outfit</h3><p id="lbDesc"></p><span class="price" id="lbPrice"></span>
+  <div class="lb-side"><span class="kick" style="display:flex;align-items:center;gap:8px"><img src="images/logo-192.png" alt="" width="32" height="32" style="border-radius:50%">Nari Nikhar</span><h3 id="lbTitle">Outfit</h3><p id="lbDesc"></p><span class="price" id="lbPrice"></span>
    <a class="btn-wa" id="lbWa" href="#" target="_blank" rel="noopener">{WAI}<span>Order on WhatsApp</span></a>
    <ul><li>{ic("check","mi")}5-day size exchange</li><li>{ic("check","mi")}Sizes up to 3XL+ in selected styles</li><li>{ic("check","mi")}Worldwide shipping</li></ul>
   </div>
@@ -648,7 +746,7 @@ JS = '''<script>
 })();
 </script>''' % (json.dumps({k:[v[0],v[1],rs(v[3])] for k,v in P.items()}), WA)
 
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Kalam:wght@700&display=swap">'
+FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Kalam:wght@700&display=swap">'
 DESC = f"Designer suit sets from {rs(lo_all)} at Nari Nikhar, Hathras. Party wear, printed suits and co-ords. 4.6★ on Google. Order on WhatsApp, 5-day size exchange."
 
 mode, out = sys.argv[1], sys.argv[2]
@@ -662,11 +760,14 @@ else:
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nari Nikhar | Designer Suit Sets from {rs(lo_all)} · Hathras</title>
 <meta name="description" content="{DESC}">
-<meta name="theme-color" content="#D9006C">
+<meta name="theme-color" content="#2B2B2F">
 <meta property="og:title" content="Nari Nikhar | Designer Suit Sets from {rs(lo_all)}">
 <meta property="og:description" content="{DESC}">
 <meta property="og:image" content="https://prashanttyagi3112.github.io/narinikhar/images/lilac-cape-coord.jpg">
-<script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"ClothingStore","name":"Nari Nikhar","telephone":"+91 98702 78767","address":{"@type":"PostalAddress","streetAddress":"Naya Ganj, Subji Mandi, Opp. Maheshwari Dharamshala","addressLocality":"Hathras","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"openingHours":["Mo-Sa 11:00-20:00","Su 12:00-18:00"],"priceRange":f"{rs(lo_all)} - {rs(3999)}","sameAs":["https://www.instagram.com/narinikhar/"]})}</script>
+<meta property="og:image" content="https://prashanttyagi3112.github.io/narinikhar/images/share-card.jpg">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"ClothingStore","name":"Nari Nikhar","telephone":"+91 98702 78767","address":{"@type":"PostalAddress","streetAddress":"Naya Ganj, Subji Mandi, Opp. Maheshwari Dharamshala","addressLocality":"Hathras","addressRegion":"Uttar Pradesh","addressCountry":"IN"},"openingHours":["Mo-Sa 11:00-20:00","Su 12:00-18:00"],"priceRange":f"{rs(lo_all)} - {rs(3999)}","logo":"https://prashanttyagi3112.github.io/narinikhar/images/logo.png","slogan":"Quality makes the difference","sameAs":["https://www.instagram.com/narinikhar/"]})}</script>
 {FONTS}
 <style>{CSS}</style>
 </head>
