@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nari Nikhar | Women's Clothing Store, Hathras</title>
 <meta name="description" content="Nari Nikhar, Hathras: party wear, suit sets with dupatta, co-ord sets and everyday suits. Shop in store, on video call or on WhatsApp.">
-<meta name="theme-color" content="#E5197A">
+<meta name="theme-color" content="#E8006F">
 <meta property="og:title" content="Nari Nikhar | Women's Clothing Store, Hathras">
 <meta property="og:description" content="Nari Nikhar, Hathras: party wear, suit sets with dupatta, co-ord sets and everyday suits. Shop in store, on video call or on WhatsApp.">
 <meta property="og:image" content="https://prashanttyagi3112.github.io/narinikhar/images/lilac-cape-coord.jpg">
@@ -353,6 +353,81 @@ footer h4{color:var(--marigold);font-weight:800}
 .rev figcaption{margin-top:auto;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
 @media (max-width:1024px){.rev-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.rev-grid{grid-template-columns:1fr}}
+
+/* ---- bright, high-contrast pass ---- */
+:root{--bg:#FFFFFF;--ink:#16020F;--muted:#3E2436;--line:rgba(22,2,15,.18);
+  --rose:#E8006F;--plum:#E8006F;--plum-2:#A8004F;--marigold:#FFC300;--gold:#FFC300;--kesar:#FF5A1F;--peacock:#007F73;--violet:#6C2BD9;--sun:#FFE14D;--mint:#B8F2E6;--lilac:#E4D7FF;--pinkwash:#FFD6E8}
+body{background:var(--bg);color:var(--ink)}
+.strip{background:var(--rose);color:#fff}
+.strip span+span::before{color:var(--sun)}
+nav.main a{color:var(--ink);font-weight:700}
+nav.main a.hot{color:#fff;background:var(--violet);padding:6px 14px;border-radius:999px;margin-block:6px}
+nav.main a.hot::after{display:none}
+/* hero colours: deeper and brighter */
+.slide.s-plum{background-color:var(--rose)}
+.slide.s-rose{background-color:var(--marigold)}
+.slide.s-sage{background-color:var(--violet)}
+.slide.s-sage .kicker{color:var(--sun)}
+.slide.s-rose h2,.slide.s-rose h1{color:var(--ink)}
+.slide.s-rose p{color:var(--ink)}
+.slide h1,.slide h2{text-shadow:0 2px 0 rgba(0,0,0,.08)}
+.slide .btn{border-width:3px;box-shadow:5px 5px 0 var(--ink)}
+.slide .btn:hover{box-shadow:7px 7px 0 var(--ink)}
+/* colour bands */
+.cats{background:var(--lilac)}
+.cats .sec-head h2{color:var(--violet)}
+.circles span{color:var(--ink);font-weight:800}
+.circles .ring{padding:6px;background:conic-gradient(var(--rose) 0 25%,var(--marigold) 0 50%,var(--peacock) 0 75%,var(--violet) 0)}
+#party{background:var(--pinkwash)}
+#printed{background:var(--sun)}
+#everyday{background:var(--mint)}
+#party .row-head h2{color:var(--rose)}
+#printed .row-head h2{color:var(--ink)}
+#everyday .row-head h2{color:var(--peacock)}
+.row-head{border-bottom:3px solid var(--ink)}
+.row-head p{color:var(--muted);font-weight:500}
+#party .prod{--c:var(--rose)} #printed .prod{--c:var(--violet)} #everyday .prod{--c:var(--peacock)}
+.prod{border-width:3px;box-shadow:5px 5px 0 var(--ink)}
+.prod:hover{box-shadow:9px 9px 0 var(--c)}
+.prod-img{border-bottom-width:3px}
+.prod-info h3{color:var(--ink)}
+.prod-desc{color:var(--muted)}
+.price{color:var(--c);font-size:1.25rem}
+.badge{background:var(--ink);color:var(--sun)}
+.btn-line{border-width:3px;background:var(--c);border-color:var(--c);color:#fff}
+.btn-line:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.row-ctrl button{border-width:3px;background:#fff}
+.prods{padding:6px 14px 18px 4px}
+/* promo */
+.promo{background-color:var(--violet);border-block:4px solid var(--ink)}
+.promo-copy .kicker,.fee{color:var(--sun)}
+.btn.light{background:var(--sun);color:var(--ink);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+/* reviews */
+.reviews{background:var(--rose)}
+.reviews .sec-head h2{color:#fff}
+.reviews .sec-head .rule{background:var(--sun)}
+.rev-score{background:var(--ink);border:3px solid var(--ink)}
+.rev{border-width:3px;box-shadow:5px 5px 0 var(--ink)}
+.rev:nth-child(2){--c:var(--rose)}.rev:nth-child(3){--c:var(--violet)}.rev:nth-child(4){--c:var(--kesar)}
+/* features */
+.feats-band{background:var(--marigold);padding-block:48px}
+.features{border-width:3px;box-shadow:6px 6px 0 var(--ink)}
+.feat+.feat{border-left-width:3px}
+.feat p{color:var(--muted)}
+.feat:nth-child(2) .ic{color:var(--violet)}
+/* about */
+.about-pic::after{background:var(--rose)}
+.about-pic img{border-width:4px}
+.about-pic .sticker{background:var(--violet);border:3px solid var(--ink)}
+.about p{color:var(--muted)}
+.visit-card{border-width:3px;box-shadow:6px 6px 0 var(--marigold)}
+.vi span{color:var(--muted)}
+.btn{border-width:3px}
+/* footer */
+footer{background:var(--ink);color:rgba(255,255,255,.86)}
+footer h4,footer .mandala,footer .logo-sub{color:var(--sun)}
+.fab{box-shadow:5px 5px 0 var(--ink)}
+@media (max-width:560px){.prod{box-shadow:4px 4px 0 var(--ink)}.feats-band{padding-block:36px}}
 </style>
 </head>
 <body>
@@ -409,7 +484,7 @@ footer h4{color:var(--marigold);font-weight:800}
  <div class="dots"><button type="button" aria-label="Show slide 1" aria-current="true"></button><button type="button" aria-label="Show slide 2" aria-current="false"></button><button type="button" aria-label="Show slide 3" aria-current="false"></button></div>
 </section>
 
-<section class="sec">
+<section class="sec cats">
  <div class="wrap">
   <div class="sec-head"><h2>Shop by Category</h2><span class="rule"></span></div>
   <ul class="circles">
@@ -619,7 +694,7 @@ footer h4{color:var(--marigold);font-weight:800}
  </div>
 </section>
 
-<section class="sec" style="padding-block:0 64px">
+<section class="sec feats-band">
  <div class="wrap">
   <div class="features">
    <div class="feat"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><h3>Worldwide shipping</h3><p>We deliver across India and abroad.</p></div></div>
